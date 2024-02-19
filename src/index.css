@@ -1,0 +1,314 @@
+@font-face {
+    font-family: "Roboto Regular",sans-serif;
+    src: url('../font/Roboto-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Regular",sans-serif;
+}
+
+hr {    
+    background-color: #FFF;
+}
+
+a {
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #FFF;
+    margin-left: 5px;
+    position: absolute;
+    right: 9999999px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: 3px;
+}
+
+h5 {
+    color: #41E0FD;
+    letter-spacing: 2px;
+}
+
+h6 {
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) { 
+    h1 {
+        display: none;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+body,
+#root,
+.page {
+    height: 100vh;
+}
+
+@media (max-width: 768px) { 
+    body,
+    #root,
+    .page {
+        height: 100%;        
+    }
+    body {
+        overflow-y: auto;
+    }
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-header {
+    height: auto;
+}
+
+.header {
+    height: 12vh;
+    background-color: #712CF9;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) { 
+    body,
+    #root,
+    .page {
+        height: 100%;        
+    }
+    body {
+        overflow-y: auto;
+    }
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.header a {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-item-img {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item-img:hover {    
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.nav-item img {
+    width: 18px;
+} 
+
+.header a:focus {
+    border: 0 none;
+    outline: 0 none;
+}
+
+.logo,
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.logo a img {
+    width: 50px;
+    height: auto;
+}
+
+.main {
+    height: 88vh;
+    background-color: #161515;
+}
+
+@media (max-width: 768px) { 
+    .main {
+        height: 100%;
+    }
+}
+
+.banner {   
+    width: 210px!important;
+    height: auto!important;
+    margin: 0.2rem 0;
+}
+
+.content {
+    height: auto;
+    padding:0 0 10px 0;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #161515;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;  
+}
+
+@media (max-width: 768px) { 
+    .content {
+        order: 1;
+    }    
+    .projects {
+        order: 2;
+    }
+    .content-detail {
+        order: 2;
+    }
+    .projects-detail {
+        order: 1;
+    }
+}
+
+.content section {
+    height: auto;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .content section {
+        padding: 0;
+    }
+}
+
+.content section::-webkit-scrollbar {
+    width: 1.25px;
+}
+
+.content section::-webkit-scrollbar-thumb {
+    background-color: #41E0FD;
+}
+
+.content section::-webkit-scrollbar-track {
+    background-color: #EDEDED;
+}
+
+@media (max-width: 768px) { 
+    .content,
+    .content section {
+        height: 100%;
+    }
+}
+
+.content a {
+    color: #41E0FD;
+}
+
+@media (max-width: 768px) { 
+    .content {
+        height: 100%;
+    }
+}
+
+.projects {
+    height: auto;
+    padding: 20px 1rem;
+    box-sizing: border-box;
+    background-color: rgb(26, 26, 26, 0.95);
+}
+
+.projects section {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.projects section::-webkit-scrollbar {
+    width: 4px;
+}
+
+.projects section::-webkit-scrollbar-thumb {
+    background-color: #712CF9;
+}
+
+.projects section::-webkit-scrollbar-track {
+    background-color: #CCC;
+}
+
+.projects h5 {
+    color: #FFF;
+}
+.projects .nav-link {
+    color: #41E0FD!important;
+    font-weight: 500;
+}
+
+.content .nav-link {
+    background-color: #712CF9;
+    color: #FFF;
+}
+
+@media (max-width: 768px) { 
+    .projects {
+        height: 100%;
+    }
+    .projects section {
+        height: 24vh;
+    }
+}
+
+.content img.banner {
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer {
+    height: 10vh;
+    text-align: center;
+    background-color: #161515;
+    color: #FFF;  
+}
