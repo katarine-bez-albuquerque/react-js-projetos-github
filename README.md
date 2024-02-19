@@ -7,7 +7,7 @@
 
 ## Sobre o projeto
 
-Clique e acesse o projeto: [projetos-github-react](https://react-projetos-github.vercel.app/detail/755287806)
+Clique e acesse o projeto: [projetos-github-react](https://react-projetos-github.vercel.app/)
 
 Trabalho realizado com o framework React Js, com uso de Typescript, HTML5, CSS3 e Bootstrap. 
 
