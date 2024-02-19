@@ -1,4 +1,4 @@
-import { Iul } from "./IUl";
+import { Iul } from "./Iul";
 
 const Ul = ({children,newClass}:Iul) => {
     return(
